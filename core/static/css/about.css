@@ -1,0 +1,12 @@
+
+.ahero{
+    background-image: url("../img/wellness-3_Recraft-V4_2026-07-23_12-50-36.jpg");
+    /* border: 1px solid red; */
+    height: 796px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.herotxt
+{
+    height: 200px;
+}
