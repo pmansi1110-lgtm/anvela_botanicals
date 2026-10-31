@@ -1,0 +1,17 @@
+
+.background-color{
+    background-color: #FCF6E4;
+}
+.product-title{
+    height: 50px;   
+    padding-inline: 30px;
+   
+}
+.products{
+    width: 1300px; 
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+  
+    flex-wrap: wrap;
+}
