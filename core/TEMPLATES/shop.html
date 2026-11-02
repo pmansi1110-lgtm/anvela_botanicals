@@ -1,3 +1,4 @@
+{% extends 'headerfooter.html' %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -11,14 +12,15 @@
 
 </head>
 <body>
-    <div class="background-color">
+    {% block content %}
+    <div class="background-color" style="background-color: #FCF6E4;">
 
-    <div class="product-title ">
+    <div class="product-title " style="height: 50px;    padding-inline: 30px; padding-top: 10px;">
         <h1>Products</h1>
     
     </div>
 
-    <div class="products">
+    <div class="products" style="width: 1300px; margin-top: 80px;  display: flex; justify-content: space-evenly; flex-wrap: wrap;padding-bottom: 30px;">
 
          <div>
             <img src="{% static 'img/facewash.avif' %}" alt="">
@@ -68,5 +70,6 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
+     {% endblock %}
 </body>
 </html>

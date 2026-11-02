@@ -1,0 +1,38 @@
+header{
+    height: 50px;
+    background-color: #f7e767;
+}
+.ds{
+ width: 33.33%;  
+ text-align: center;
+}
+
+footer{
+    height: 275px;
+    background-color: #F7E767;
+    padding-top: 30px;
+}
+.footer-main{
+    height: 45px;
+    
+
+}
+.footer-main ul{
+    height: 45px;
+    display: flex;
+    font-size: 15px;
+    list-style: none;
+    text-align: center;
+    justify-content: space-around;
+    
+
+}
+.footer-main ul li a {
+    color: #262424;
+}
+
+footer p {
+    margin-top: 150px;
+    text-align: center;
+    font-size: 15px;
+}

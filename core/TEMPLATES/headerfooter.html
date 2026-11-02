@@ -1,0 +1,70 @@
+{% load static %}   
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+</head>
+<body>
+     <header class="d-flex">
+
+        <div class="ds">
+                    <ul class="d-flex text-decoration-none list-unstyled ms-3 mt-2">
+            <li  class="ms-3"> <a href="{% url 'shop' %}"></a>Home</li>
+            <li class="ms-4"><a href=""></a> Shop</li>
+            <li class="ms-4"> <a href=""></a> About</li>
+            <li class="ms-4"><a href=""></a> Contact</li>
+          
+        </ul>
+        </div>
+        <div class="ds mt-2 ">
+            <h3>Anvela Botanicals</h3>
+        </div>
+        <div class="ds d-flex mt-3 text-end" style="padding-left: 390px; font-size: 22px;">
+            <i class="fa-solid fa-circle-user"></i> 
+            <i class="fa-solid fa-bag-shopping ms-2"></i>
+        </div>
+    </header>
+    <main>
+    {% block content %}
+    {% endblock %}
+    </main>
+
+    
+
+
+    <footer>
+        <div class="footer-main">
+        <ul>
+            <li>
+500 Terry Francine Street,<br>
+San Francisco, CA 94158</li>
+            <li>123-456-7890 <br>
+info@mysite.com</li>
+            <li><a href="">Instagram <br>
+
+Facebook</a></li>
+            <li><a href="">Accessibility Statement <br>
+
+Privacy Policy <br>
+
+FAQ</a></li>
+            <li><a href="">Terms & Conditions <br>
+
+Refund Policy <br>
+
+Shipping Policy</a></li>
+        </ul>
+        </div>
+        <p class="">© 2035 by Anveia Botanicals. Powered and secured by Wix</p>
+    </footer>
+
+    
+
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
