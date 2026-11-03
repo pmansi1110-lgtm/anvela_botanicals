@@ -6,3 +6,6 @@ def about(request):
 
 def headerfooter(request):
     return render(request,"headerfooter.html")
+
+def dashboard(request):
+    return render(request,"dashboard.html")
