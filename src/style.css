@@ -1,0 +1,85 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #FCF6E4;
+}
+
+
+main{
+    height: 700px;
+    width: 100%;
+  
+    
+}
+.bg1{
+ background-image: url(/src/img/hero.avif);
+ height: 600px;
+ width: 100%;
+ background-size: cover;
+ background-position: center center;
+}
+
+.div{
+ text-align: center;
+}
+.img1{
+    margin-top: 160px;
+}
+.img2{
+    margin-bottom: 160px;
+}
+.img3{
+    margin-bottom: 76px;
+}
+h2 {
+   margin-left: 20px; 
+}
+p{
+    margin-right: 20px;
+}
+.div2{
+ display: flex;   
+justify-content: center;
+ gap:10px;
+}
+.div3{
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+.div33{
+     background-image: url(/src/img/bg.avif);
+     height: 700px;
+     width: 100%;
+}
+.mt{
+    margin-top: 500px;
+    margin-left: 20px;
+}
+.div22{
+    border: 1px solid rgb(65, 57, 57);
+}
+input{
+    border:none;
+    width: 25%;
+    
+}
+.checkbox{
+    height: 15px;
+    width:15px;
+}
+.m{
+    margin-top: 150px;
+}
+.ps{
+    font-size: 25px;
+}
+button{
+    height: 40px;
+    width: 20%;
+    background-color: rgb(31, 28, 28);
+    color: white;
+    border: none;
+}
