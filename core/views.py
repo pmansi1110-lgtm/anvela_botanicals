@@ -1,8 +1,10 @@
 from django.shortcuts import render
 
 # Create your views here.
-def about(request):
-    return render(request,"about.html")
+
+def shop (request):
+    return render (request,"shop.html")
 
 def headerfooter(request):
-    return render(request,"headerfooter.html")
+    return render (request,"headerfooter.html")
+

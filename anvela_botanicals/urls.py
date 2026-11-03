@@ -20,6 +20,7 @@ from core.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('about/',about,name="about"),
+    path('shop/',shop,name="shop"),
     path('headerfooter/',headerfooter,name="headerfooter"),
+
 ]
