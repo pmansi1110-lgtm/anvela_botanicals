@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    height: 900px;
+    -border: 1px solid;
+    background-color: #fcf6e4;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.reach{
+    color: black;
+}
+.img{
+    height: 728px;
+    width: 476px;
+    position: relative;
+    right: 10px;
+   
+    
+    
+    
+}
+.details{
+ display: flex;
+ flex-direction: column;
+ align-items: end;
+    
+
+}
+.contact{
+    border: 0;
+    background-color: #fcf6e4;
+   }
+form{
+   position: relative;
+   }
+
+
