@@ -1,0 +1,104 @@
+{% extends 'headerfooter.html' %}
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   
+</head>
+<body>
+  {% block content %}
+    <div class="main">
+    <div class="d-flex justify-content-between   " style="background-color:#fcf6e4 ;">
+
+
+        <div class="reach">
+            <h1>Reach Out to Us</h1>
+            <p>We are here to assist with any questions <br> about our botanical formulas, order tracking, <br> or finding the perfect ritual for your skin type. <br> Fill out our form or contact us directly.</p>
+
+           </div>
+        
+        
+           <div class="img">
+            <img src="{% static 'img/Copy of wellness_Gemini 3 (Nano Banana Pro)_2026-07-21_08-03-14_edited_edited.avif' %}" alt="">
+            
+            
+            </div>
+        
+        
+        
+       
+       
+           <div class="details">
+            <h3>Adress</h3>
+            <p>500 Terry Francine Street, <br> San Francisco, CA 94158</p>
+
+            <h3>Email</h3>
+            <p>info@mysite.com</p>
+
+            <h3>Phone</h3>
+            <p>123-456-7890</p>
+
+
+           </div>
+           </div>
+
+        </div>
+
+        <div class="contact" >
+            <div style="margin-left: 110px;">
+           
+          <form action="">
+            <div class=" mt-5 d-flex gap-3 justify-content-center align-items-center">
+              <div class="flex-column">
+                <label for="" class="form-label">First Name*</label>
+                <input
+                  type="text"
+                  class="form-control p-2 bg-warning-subtle border-1 border-secondary-subtle secondary"
+                  style="width: 230px"
+                />
+              </div>
+              <div class="flex-column">
+                <label for="" class="form-label">Last Name*</label>
+                <input
+                  type="text"
+                  class="form-control p-2   bg-warning-subtle border-1 border-secondary-subtle secondary"
+                  style="width: 230px"
+                />
+              </div>
+            </div>
+
+            <div class="d-flex mt-5 flex-column" style="margin-left: 380px">
+              <label for="" class="form-label">Email Address*</label>
+              <input
+                type="text"
+                class="form-control p-2 bg-warning-subtle border-1 border-secondary-subtle secondary"
+                style="width: 480px"
+              />
+
+              <label for="" class="form-label mt-5">Message*</label>
+              <input
+                type="text"
+                class="form-control p-5 bg-warning-subtle border-1 border-secondary-subtle secondary"
+                style="width: 490px"
+              />
+            </div>
+
+            <button class="btn btn-dark mt-5  mb-5" style="margin-left: 380px;width: 500px;">
+              SEND
+            </button>
+          </form>
+        </div>
+        </div>
+       
+    
+     {% endblock %}
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
