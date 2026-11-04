@@ -22,5 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('shop/',shop,name="shop"),
     path('headerfooter/',headerfooter,name="headerfooter"),
-
+    path('dashboard/',dashboard,name="dashboard"),
 ]
