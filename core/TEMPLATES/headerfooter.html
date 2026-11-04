@@ -1,26 +1,22 @@
-{% load static %}
+{% load static %}   
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-        <link rel="stylesheet" href="{% static 'css/footer.css' %}">
-
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
 </head>
 <body>
-    <header class="d-flex">
+     <header class="d-flex">
 
         <div class="ds">
                     <ul class="d-flex text-decoration-none list-unstyled ms-3 mt-2">
-            <li  class="ms-3"> <a href="{% url 'about' %}"></a>Home</li>
-            <li class="ms-4"><a href="{% url 'about' %}"></a> Shop</li>
-            <li class="ms-4"> <a href="{% url 'about' %}"></a> About</li>
-            <li class="ms-4"><a href="{% url 'about' %}"></a> Contact</li>
+            <li  class="ms-3"> <a href="{% url 'shop' %}"></a>Home</li>
+            <li class="ms-4"><a href=""></a> Shop</li>
+            <li class="ms-4"> <a href=""></a> About</li>
+            <li class="ms-4"><a href=""></a> Contact</li>
           
         </ul>
         </div>
@@ -32,11 +28,15 @@
             <i class="fa-solid fa-bag-shopping ms-2"></i>
         </div>
     </header>
-<main>
+    <main>
     {% block content %}
     {% endblock %}
-</main>
-        <footer>
+    </main>
+
+    
+
+
+    <footer>
         <div class="footer-main">
         <ul>
             <li>
@@ -62,5 +62,9 @@ Shipping Policy</a></li>
         <p class="">© 2035 by Anveia Botanicals. Powered and secured by Wix</p>
     </footer>
 
+    
+
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
