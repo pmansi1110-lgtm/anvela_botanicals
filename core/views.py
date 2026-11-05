@@ -14,3 +14,9 @@ def headerfooter(request):
 
 def dashboard(request):
     return render(request,"dashboard.html")
+
+def about(request):
+    return render(request,"about.html")
+
+def index(request):
+    return render(request,"index.html")

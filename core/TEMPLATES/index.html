@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
+
 </head>
+{% block content %}
 <body style="background-color: antiquewhite;">
 
 
@@ -21,9 +24,9 @@
   </div>
 
   <div class="div">
-    <img src="./img/1.avif" alt="" class="img1">
-     <img src="./img/2.avif" alt="" >
-    <img src="./img/3.avif" alt="" class="img2">
+    <img src="{% static 'img/1.avif' %}" alt="" class="img1">
+     <img src="{% static 'img/2.avif' %}" alt="" >
+    <img src="{% static 'img/3.avif' %}" alt="" class="img2">
   </div>
  </div>
 
@@ -35,7 +38,7 @@
 
   <div class="div2 mt-2">
     <div>
-    <img src="./img/4.avif" alt="">
+    <img src="{% static 'img/4.avif' %}" alt="">
     <div class="d-flex justify-content-between align-items-center">
       <h3>Essential Oils</h3>
       <span><a href="#">Shop Now <i class="fa-solid fa-arrow-up"></i></a></span>
@@ -43,7 +46,7 @@
     </div>
 
     <div>
-    <img src="./img/5.avif" alt="" class="img3">
+    <img src="{% static 'img/5.avif' %}" alt="" class="img3">
     <div class="div3">
       <h3>Skincare</h3>
       <span><a href="#">Shop Now <i class="fa-solid fa-arrow-up"></i></a></span>
@@ -51,7 +54,7 @@
     </div>
 
     <div>
-    <img src="./img/6.avif" alt="">
+    <img src="{% static 'img/6.avif' %}" alt="">
     <div class="d-flex justify-content-between align-items-center">
       <h3>Care and Health</h3>
       <span><a href="#">Shop Now <i class="fa-solid fa-arrow-up"></i></a></span>
@@ -88,7 +91,7 @@
 
   <div class="d-flex  justify-content-between ms-3">
     <div>
-      <img src="./img/7.avif" alt="">
+      <img src="{% static 'img/7.avif' %}" alt="">
       <div class="">
         <p>Hydrating Face Cream</p>
         <span>$9.00</span>
@@ -96,7 +99,7 @@
     </div>
 
     <div>
-      <img src="./img/8.avif" alt="">
+      <img src="{% static 'img/8.avif' %}" alt="">
       <div class="">
         <p>Nourishing Body Butter</p>
         <span>$32.00</span>
@@ -104,7 +107,7 @@
     </div>
 
     <div>
-      <img src="./img/9.avif" alt="">
+      <img src="{% static 'img/9.avif' %}" alt="">
       <div class="">
         <p>Exfoliating Body Scrub</p>
         <span>$24.00</span>
@@ -112,7 +115,7 @@
     </div>
 
     <div>
-      <img src="./img/10.avif" alt="">
+      <img src="{% static 'img/10.avif' %}" alt="">
       <div class="">
         <p>Restorative Green Tea</p>
         <span>$32.00</span>
@@ -182,6 +185,7 @@
     </div>
  </div>
 </main>
+{% endblock %}
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

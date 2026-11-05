@@ -20,8 +20,11 @@ from core.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('/', index,name="index"),
     path('shop/',shop,name="shop"),
     path('contact/',contact,name="contact"),
     path('headerfooter/',headerfooter,name="headerfooter"),
     path('dashboard/',dashboard,name="dashboard"),
+    path('about/',about,name="about"),
+    path('index/',index,name="index"),
 ]
