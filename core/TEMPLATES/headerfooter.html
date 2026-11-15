@@ -13,10 +13,10 @@
 
         <div class="ds">
                     <ul class="d-flex text-decoration-none list-unstyled ms-3 mt-2">
-            <li  class="ms-3"> <a href="{% url 'shop' %}"></a>Home</li>
-            <li class="ms-4"><a href=""></a> Shop</li>
-            <li class="ms-4"> <a href=""></a> About</li>
-            <li class="ms-4"><a href=""></a> Contact</li>
+            <li  class="ms-3"> <a href="{% url 'index' %}"></a>Home</li>
+            <li class="ms-4"><a href="{% url 'shop' %}"></a> Shop</li>
+            <li class="ms-4"> <a href="{% url 'about' %}"></a> About</li>
+            <li class="ms-4"><a href="{% url 'contact' %}"></a> Contact</li>
           
         </ul>
         </div>
@@ -28,6 +28,7 @@
             <i class="fa-solid fa-bag-shopping ms-2"></i>
         </div>
     </header>
+
     <main>
     {% block content %}
     {% endblock %}
@@ -40,23 +41,23 @@
         <div class="footer-main">
         <ul>
             <li>
-500 Terry Francine Street,<br>
-San Francisco, CA 94158</li>
-            <li>123-456-7890 <br>
-info@mysite.com</li>
+                    500 Terry Francine Street,<br>
+                    San Francisco, CA 94158</li>
+            <li>    123-456-7890 <br>
+                    info@mysite.com</li>
             <li><a href="">Instagram <br>
 
-Facebook</a></li>
+                    Facebook</a></li>
             <li><a href="">Accessibility Statement <br>
 
-Privacy Policy <br>
+                    Privacy Policy <br>
 
-FAQ</a></li>
+                    FAQ</a></li>
             <li><a href="">Terms & Conditions <br>
 
-Refund Policy <br>
+                    Refund Policy <br>
 
-Shipping Policy</a></li>
+                    Shipping Policy</a></li>
         </ul>
         </div>
         <p class="">© 2035 by Anveia Botanicals. Powered and secured by Wix</p>

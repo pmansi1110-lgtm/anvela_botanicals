@@ -21,13 +21,14 @@
     </div>
 
     <div class="products" style="width: 1300px; margin-top: 80px;  display: flex; justify-content: space-evenly; flex-wrap: wrap;padding-bottom: 30px;">
-
+        {% for Product in products %}
          <div>
-            <img src="{% static 'img/facewash.avif' %}" alt="">
-            <p class="m-0 p-0">Hydrating Face Cream</p>
-            <span>$9.00</span>
+            <img src="{{ Product.image.url }}" width="300px" height="400px" alt="Product Image">
+            <p class="m-0 p-0">{{ Product.name }}</p>
+            <span>${{ Product.price }}</span>
         </div>
-         <div>
+        {% endfor %}
+         <!-- <div>
             <img src="{% static 'img/facewash.avif' %}" alt="">
             <p class="m-0 p-0">Hydrating Face Cream</p>
             <span>$9.00</span>
@@ -64,7 +65,7 @@
         </div>
         
         
-    </div>
+    </div> -->
     </div>
     
 

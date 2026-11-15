@@ -2,22 +2,22 @@ body{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    background-color: #FCF6E4;
+    
 }
 
 
 main{
     height: 700px;
     width: 100%;
-  
     
 }
 .bg1{
- background-image: url(/src/img/hero.avif);
+ background-image: url("../img/hero.avif");
  height: 600px;
  width: 100%;
  background-size: cover;
  background-position: center center;
+ background-repeat: no-repeat;
 }
 
 .div{
@@ -38,21 +38,36 @@ h2 {
 p{
     margin-right: 20px;
 }
-.div2{
- display: flex;   
-justify-content: center;
- gap:10px;
+
+.div2 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 .div3{
     margin-bottom: 100px;
     display: flex;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
 }
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 .div33{
-     background-image: url(/src/img/bg.avif);
+    
+     background-image: url("../img/bg.avif");
      height: 700px;
      width: 100%;
+     background-size: cover;
+     background-position: center center;
+     background-repeat: no-repeat;
 }
 .mt{
     margin-top: 500px;
@@ -82,4 +97,13 @@ button{
     background-color: rgb(31, 28, 28);
     color: white;
     border: none;
+}
+
+a {
+    height: 40px !important;
+    width: 20% !important;
+    /* background-color: black !important; */
+    color: black !important;
+    border: none !important;
+    /* text-decoration: none; */
 }
